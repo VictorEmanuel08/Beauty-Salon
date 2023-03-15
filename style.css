@@ -204,8 +204,7 @@ nav .menu ul {
 
 /* MOSTRAR MENU */
 nav.show .menu {
-  opacity: 0;
-  /* ta invisivel */
+  opacity: 1;
   visibility: visible;
 
   background: var(--body-color);
@@ -376,11 +375,11 @@ nav.show div.icon-close {
   position: relative;
   text-indent: 1.875rem;
   margin-bottom: 1.5rem;
+  color: var(--title-color);
 }
 
 #testimonials blockquote p span {
-  font: 700 3rem serif;
-
+  font: 700 2.5rem serif;
   position: absolute;
   top: -0.5rem;
   left: -1.875rem;
@@ -390,6 +389,7 @@ nav.show div.icon-close {
 #testimonials cite {
   display: flex;
   align-items: center;
+  font-style: normal;
 }
 
 #testimonials cite img {
@@ -397,4 +397,5 @@ nav.show div.icon-close {
   height: 2rem;
   object-fit: cover;
   clip-path: circle();
+  margin-right: 0.5rem;
 }
