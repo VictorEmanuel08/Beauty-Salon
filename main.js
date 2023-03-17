@@ -32,3 +32,28 @@ window.addEventListener("scroll", function () {
 });
 
 // Testimonials Carousel slider swiper
+const swiper = new Swiper(".swiper-container", {
+  slidesPerView: 1 /*slides por visualização*/,
+  pagination: {
+    el: ".swiper-pagination" /*elemento no pagination*/,
+  },
+  mousewheel: true /*quando passar o mouse, ele obedece a movimentação*/,
+  keyboard: true /*quando usar o teclado, ele obedece a movimentação*/,
+});
+
+// ScrollReveal: Mostrar elementos quando usar o scroll na página
+const scrollreveal = ScrollReveal({
+  origin: "top",
+  distance: "30px",
+  duration: 700,
+  reset: true,
+});
+ScrollReveal().reveal(
+  `#home .image, #home .text, 
+  #about .image, #about .text, 
+  #services header, #services .card, 
+  #testimonials header, #testimonials .testimonials,
+  #contact .text, #contact .links
+`,
+  { interval: 100 }
+);
