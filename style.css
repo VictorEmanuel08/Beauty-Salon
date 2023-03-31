@@ -515,3 +515,15 @@ footer .social a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+/*Responsivo*/
+
+/*======== MEDIA QUERIES ========*/
+/* extra devices: 1200 > */
+/* large devices: 1023 > */
+/* large devices: 992 > */
+/* medium devices: 767 > */
+
+/* @media() {
+  54:02
+} */
